@@ -9,11 +9,44 @@
   <meta name="keywords" content="HTML, CSS, Javascript, API, Web-App">
   <meta name="theme-color" content="#1f1f1f">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Web App From Scratch</title>
+  <title>ImageFeeder</title>
 </head>
 <body>
-  <h1>This is only the beginning!</h1>
-
+  <header>
+    <h1>ImageFeeder</h1>
+    <h4>Feed yourself some images</h4>
+  </header>
+  <main>
+    <form>
+      <input type="text" name="search" id="search" placeholder="Search photo's...">
+      <button type="submit">Search</button>
+    </form>
+    <nav>
+      <ul>
+        <li class="active">Latest</li>
+        <li>Popular</li>
+        <li>Random</li>
+      </ul>
+    </nav>
+    <section>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1612271974453-15e684c6586b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="">
+        <figcaption>Woman with tea</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="">
+        <figcaption>Man behind laptop</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1612229616525-925a57d1173c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="">
+        <figcaption>Reflection from puddle</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1612226466724-0ec9b5179a75?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="">
+        <figcaption>Woman standing in pool</figcaption>
+      </figure>
+    </section>
+  </main>
   <script src="./js/app.js"></script>
 </body>
 </html>

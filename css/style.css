@@ -3,6 +3,7 @@
 :root {
   --color-primary: #eeeeee;
   --color-secondary: #1f1f1f;
+  --color-accent: #c4c4c4;
 }
 
 [data-theme=dark] {
@@ -30,9 +31,129 @@ html {
 
 h1,
 h2,
-h3 {
-  font-size: clamp(2em, 4vw, 3em);
+h3,
+h4,
+h5,
+h6 {
   font-weight: 800;
   margin: 0 auto;
   width: max-content;
+}
+
+header {
+  font-size: clamp(2em, 8vw, 3em);
+  margin: .5em 0;
+}
+
+header h1 {
+  font-size: 1.5em;
+}
+
+header h4 {
+  font-size: .5em;
+  font-weight: 300;
+}
+
+main form {
+  align-items: center;
+  display: flex;
+  justify-content: space-center;
+  margin: 2.5em auto 2em;
+  width: clamp(18rem, 80vw, 40rem);
+}
+
+main form input,
+main form button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 2em;
+  box-shadow: 
+    3px 3px 5px #1f1f1f16,
+    -3px -3px 5px #ffffff16;
+  font-family: 'Quicksand', Verdana, sans-serif;
+  font-smooth: always;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: .85em;
+  padding: .8em 1.5em;
+}
+
+main form input {
+  background: #fff;
+  color: var(--color-secondary);
+  margin-right: 2%;
+  width: 75%;
+}
+
+main form button {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: transform .1s ease-in-out;
+}
+
+main form button:active {
+  transform: scale(.98);
+}
+
+nav {
+  align-items: center;
+  border-top: 1px solid var(--color-accent);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  width: 18em;
+}
+
+nav ul li {
+  background: #fff;
+  border-radius: clamp(15px, 20px, 30px);
+  box-shadow: 
+    3px 3px 5px #1f1f1f16,
+    -3px -3px 5px #ffffff16;
+  color: var(--color-secondary);
+  font-size: .8em;
+  padding: .5em 1em;
+  text-transform: lowercase;
+}
+
+nav ul li.active {
+  background: var(--color-accent);
+}
+
+main section {
+  display: grid;
+  gap: 3%;
+  grid-template-columns: repeat(auto-fill, minmax(17em, 1fr));
+  justify-content: center;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+main section figure {
+  margin: 0;
+  height: max-content;
+  position: relative;
+  width: 100%;
+}
+
+main section figure img {
+  object-fit: contain;
+  width: 100%;
+}
+
+main section figure figcaption {
+  bottom: 2%;
+  left: 4%;
+  position: absolute;
 }
