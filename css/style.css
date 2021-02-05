@@ -1,14 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
 :root {
   --color-primary: #eeeeee;
   --color-secondary: #1f1f1f;
   --color-accent: #c4c4c4;
-}
-
-[data-theme=dark] {
-  --color-primary: #1f1f1f;
-  --color-secondary: #eeeeee;
 }
 
 *,
