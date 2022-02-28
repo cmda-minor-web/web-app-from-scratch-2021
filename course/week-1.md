@@ -1,6 +1,9 @@
-# Exercises Week 1: ‘Hello API’ 🐒
+# Instructions Week 1: ‘Hello API’ 🐒
 
 Minor Web Development - Web App From Scratch
+
+## Goal
+Pick a user story, design the interface, retrieve data from an API and render the structured content.
 
 ## Intention
 
